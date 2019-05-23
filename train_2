@@ -1,0 +1,42 @@
+text=input("You rather to use SI or Imperial ? Answer with exact words ")
+if text=="SI" :
+    weight = input("your weight is? /:")
+    weight = float(weight)
+    height = input("your height iiis? /:")
+    height = float(height)
+    BMI = weight / (height ** 2)
+
+    if BMI < 20:
+        print("lowerwight")
+
+    elif 18.5 <= BMI < 25:
+        print("helthy :) ")
+    elif 25 <= BMI < 30:
+        print("over :< ")
+    elif BMI > 30:
+        print("u gonna die")
+    else:
+        print("come on tell me truth")
+
+elif text=="Imperial" :
+    weight = input("your weight is?")
+    weight = float(weight)
+    height = input("your height iiis? /:")
+    height = float(height)
+    BMI = (weight / (height ** 2)) * 703
+
+    if BMI < 20:
+        print("lowerwight")
+
+    elif 18.5 <= BMI < 25:
+        print("helthy :) ")
+    elif 25 <= BMI < 30:
+        print("over :< ")
+    elif BMI > 30:
+        print("u gonna die")
+    else:
+        print("come on tell me truth")
+else :
+    print("check ya answer men ")
+
+
