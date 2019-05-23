@@ -1,0 +1,16 @@
+weight=input("yo enter weight ya nqqa")
+weight=float(weight)
+height=input("tell me how much u high")
+height=float(height)
+body_mass= weight/(height**2)
+
+if body_mass < 20 :
+    print(" skiny ")
+
+elif 18.5<=body_mass<25 :
+    print("busty")
+elif 25<=body_mass<30 :
+    print("u r fat")
+elif body_mass>30 :
+    print("u r gorgeous whit halo")
+
