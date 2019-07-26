@@ -1,17 +1,24 @@
-from flask import Flask
+from flask import Flask, render_template, request
+
 app = Flask("ma app")
 
 
-def render_html(filename):
-    f = open(filename)
-    text = f.read()
-    f.close()
-    return text
+@app.route('/', methods={"GET", "POST"})
+def main_page():
+    if request.method == 'GET':
+        return render_template("index.html")
+    else:
+        Weight = float(request.form['w'])
+        Height = float(request.form['h'])
+        bmi = w / (h ** 2)
+
+        if bmi < 20:
+
+        if 20 < bmi < 25:
 
 
-@app.route('/')
-def main_page ():
-    return render_html("antimatter.html")
+        if bmi > 25:
 
+     return render_template("test1.html", javab = bmi)
 
-app.run()
+app.run(host="0.0.0.0")
